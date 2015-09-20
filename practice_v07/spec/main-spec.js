@@ -10,7 +10,7 @@ describe('tests of practice 07', function () {
     })
 
 
-    it("given Student with age=18 and name is lw, get introduce (about class)", function() {
+    it("given Student with info get introduce (about class)", function() {
 
     	var my_class = new Class(2);
     	var student = new Student(18, "lw", my_class);
@@ -20,7 +20,7 @@ describe('tests of practice 07', function () {
     })    
 
 
-    it("given teacher with age=20 and name is Jack, get introduce (Class 2 or No Class)", function() {
+    it("given teacher with info and get introduce", function() {
 
     	var person = new Teacher(20, "Jack", 2);
     	var intro = person.introduce();
@@ -33,7 +33,7 @@ describe('tests of practice 07', function () {
     
 
 
-    it("given teacher with age=20 and name is Jack, get introduce", function() {
+    it("given teacher with info and student get introduce", function() {
 
     	var my_class = new Class(2);
     	var student = new Student(18, "lw", my_class);
