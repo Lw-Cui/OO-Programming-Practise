@@ -17,13 +17,13 @@ describe('tests of practice 07', function () {
     	var student = new Student(18, "lw", my_class);
     	var intro = my_class.appendMember(student);
 
-    	expect(intro).toBe("I am Jack. I know lw has joined Class 3."); 
+    	expect(intro[0]).toBe("I am Jack. I know lw has joined Class 3."); 
 
     	var intro = student.introduce();
     	expect(intro).toBe("My name is lw. I am 18 years old. I am a Student. I am at Class 3."); 
 
     	var intro = my_class.assginLeader(student);
-    	expect(intro).toBe("I am Jack. I know lw become Leader of Class 3."); 
+    	expect(intro[0]).toBe("I am Jack. I know lw become Leader of Class 3."); 
 
 
     	var intro = student.introduce();
